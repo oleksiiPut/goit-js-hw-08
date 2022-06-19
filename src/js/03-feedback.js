@@ -23,6 +23,8 @@ function onFormSubmit(e) {
   e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
   console.log(savedMessage);
+  delete formData.email;
+  delete formData.message;
 }
 
 function onInput(e) {
